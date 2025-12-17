@@ -1,4 +1,5 @@
-module github.com/nitrictech/nitric/core
+module github.com/FrancescoMartellosio/nitric/core
+
 
 go 1.22.1
 

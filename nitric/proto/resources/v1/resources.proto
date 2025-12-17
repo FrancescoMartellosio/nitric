@@ -44,6 +44,7 @@ enum ResourceType {
   Batch = 15;
   Job = 16;
   Website = 17;
+  SparkJob = 18;
 }
 
 // Unique identifier for a resource within a nitric application.
@@ -66,7 +67,11 @@ message ResourceDeclareRequest {
     QueueResource queue = 17;
     SqlDatabaseResource sql_database = 18;
     JobResource job = 19;
+    SparkJobResource sparkjob = 20;
   }
+}
+
+message SparkJobResource{
 }
 
 message BucketResource {

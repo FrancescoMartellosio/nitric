@@ -215,6 +215,9 @@ message KeyValueStore {
 message Secret {
 }
 
+message SparkJob{
+}
+
 message SubscriptionTarget {
   oneof target {
     // The name of an service to target
@@ -338,6 +341,7 @@ message Resource {
     SqlDatabase sql_database = 21;
     Batch batch = 22;
     Website website = 23;
+    SparkJob sparkjob = 24;
   }
 }
 
